@@ -99,6 +99,6 @@ conda run -n rust-env cargo run -p crispresso-cli -- \
 
 ## 贡献者
 
-- 项目负责人：用户本人
+- 项目负责人：Caizhaohui
 - AI 协作贡献者：Claude Sonnet 4.6
 - AI 协作贡献者：GPT-5.4
