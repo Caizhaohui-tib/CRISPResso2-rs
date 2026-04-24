@@ -1,6 +1,10 @@
 # CRISPResso2-rs
 
-`CRISPResso2-rs` 是一个使用 Rust 重写 `CRISPResso2` 核心分析流程的实验性项目，目标是在保持结果兼容的前提下，逐步替代原有 Python/Cython 热点模块。
+`CRISPResso2-rs` 是一个针对原版 `CRISPResso2` 的 Rust 重写项目，目标是在保持结果兼容的前提下，逐步替代原有 Python/Cython 热点模块。
+
+这个项目建立在原版 `CRISPResso2` 的工作基础之上，重写工作的前提是尊重原作者和原项目团队已经完成的大量算法、工程与生物信息学分析工作。
+
+原版项目代码仓：`https://github.com/pinellolab/CRISPResso2`
 
 当前仓库同时包含两部分内容：
 
@@ -9,10 +13,18 @@
 
 ## 项目目标
 
+- 明确将 `CRISPResso2` 的核心分析流程重写为 Rust 实现
 - 用 Rust 重写 CRISPResso2 的核心计算路径
 - 优先保证输出结果与 Python 版本兼容
 - 用自动化测试持续验证 Rust 与 Python golden output 的一致性
 - 逐步扩展参数面，最终支撑更完整的 CRISPResso2 工作流
+
+## 与原版关系
+
+- 本项目不是一个全新设计的编辑分析工具，而是对原版 `CRISPResso2` 的重写与迁移尝试。
+- 当前仓库中的 Rust 实现以原版 `CRISPResso2` 的行为兼容为首要目标。
+- 仓库中的 `CRISPResso2-master/` 用于保存原版代码、测试数据和 golden output，便于逐步校验 Rust 实现是否与原版一致。
+- 原版项目的设计、算法思路、CLI 形态和测试资产对本项目具有决定性作用，应明确致谢并予以尊重。
 
 ## 当前状态
 
